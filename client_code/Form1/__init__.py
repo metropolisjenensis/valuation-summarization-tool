@@ -1,8 +1,8 @@
 from ._anvil_designer import Form1Template
 from anvil import *
 import anvil.server
-from . import create_Powerpoint
-from . import summarization
+#from . import create_Powerpoint
+#from . import summarization
 
 class Form1(Form1Template):
   def __init__(self, **properties):
@@ -22,11 +22,11 @@ class Form1(Form1Template):
 
   def query_holen(self):
     if self.radio_button_1.selected==True:
-      return str(self.radio_button_1.text)
+      return print(str(self.radio_button_1.text))
     elif self.radio_button_2.selected==True:
-      return str(self.radio_button_2.text)
+      return print(str(self.radio_button_2.text))
     elif self.radio_button_3.selected==True:
-      return str(self.radio_button_3.text)
+      return print(str(self.text_area_1.text))
     else:
       return print("No Query selected")
     
