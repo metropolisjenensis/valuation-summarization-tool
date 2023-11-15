@@ -47,7 +47,7 @@ components:
     type: RadioButton
     layout_properties: {grid_position: 'TLGRVW,BBBPRT'}
   - name: text_area_1
-    properties: {height: 155, text: 'Hier kannst Du deine Selbsteingabe hinein schreiben.
+    properties: {height: 225, text: 'Hier kannst Du deine Selbsteingabe hinein schreiben.
         Bitte beachte, dass ChatGPT deinen letzten Prompt vergessen hat.'}
     type: TextArea
     layout_properties: {grid_position: 'RZDEPT,XZJVJN'}

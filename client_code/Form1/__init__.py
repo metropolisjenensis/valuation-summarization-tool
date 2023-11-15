@@ -1,8 +1,8 @@
 from ._anvil_designer import Form1Template
 from anvil import *
 import anvil.server
-#from . import create_Powerpoint
-#from . import summarization
+import anvil.media 
+
 
 class Form1(Form1Template):
   def __init__(self, **properties):
@@ -30,4 +30,10 @@ class Form1(Form1Template):
       return str(self.text_area_1.text)
     else:
       return print("No Query selected")
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    
+    anvil.media.download(my_media_object)
+    pass
     
