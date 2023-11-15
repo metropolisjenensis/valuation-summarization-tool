@@ -17,7 +17,7 @@ class Form1(Form1Template):
     pass
   def outlined_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.query_holen()
+    anvil.server.call("hi")
     #summarization.generate_summary_kivy(str(file.name),self.query_holen())
 
   def query_holen(self):
